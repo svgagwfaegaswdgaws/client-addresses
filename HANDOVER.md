@@ -1,5 +1,11 @@
 # Передача проекта заказчице
 
+- Приложение: https://svgagwfaegaswdgaws.pythonanywhere.com
+- GitHub: https://github.com/svgagwfaegaswdgaws/client-addresses
+- APK и архив: https://github.com/svgagwfaegaswdgaws/client-addresses/releases/tag/v1.0
+- Аккаунт PythonAnywhere: `svgagwfaegaswdgaws`.
+- Текущий срок бесплатного хостинга: до 16.11.2026, с ручным продлением раз в месяц.
+
 Передайте:
 
 1. Ссылку на GitHub-репозиторий с исходниками.

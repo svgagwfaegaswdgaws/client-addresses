@@ -2,6 +2,12 @@
 
 Исходники: https://github.com/svgagwfaegaswdgaws/client-addresses
 
+Размещённое приложение: https://svgagwfaegaswdgaws.pythonanywhere.com
+
+На 16.10.2026 приложение настроено на Python 3.12, Force HTTPS включён.
+Текущая дата отключения бесплатного веб-приложения — 16.11.2026; до неё
+зайдите в Web и нажмите «Run until 1 month from today».
+
 PythonAnywhere предлагает бесплатный Beginner-аккаунт с одним веб-приложением,
 HTTPS и 512 MiB диска. Согласно документации на 16.10.2026, у бесплатного
 веб-приложения срок активности — один месяц. Продлевайте его в разделе Web до

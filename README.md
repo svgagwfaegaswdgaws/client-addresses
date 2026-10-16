@@ -6,6 +6,8 @@
 
 Исходники: https://github.com/svgagwfaegaswdgaws/client-addresses
 
+[Скачать APK и исходники версии 1.0](https://github.com/svgagwfaegaswdgaws/client-addresses/releases/tag/v1.0)
+
 - Четыре раздела: адреса, города, регионы, страны.
 - Добавление, просмотр, изменение, удаление и поиск.
 - Зависимые списки: страна → регион → город.
