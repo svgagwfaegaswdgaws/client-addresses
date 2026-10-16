@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#2456d8">
+  <title>Адреса клиентов</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="brand"><img src="/icon.svg" alt="" width="44" height="44"><div><strong>Адреса</strong><span>Клиенты и справочники</span></div></div>
+      <div class="status" id="status" role="status"><i></i><span>Подключение…</span></div>
+    </header>
+    <main>
+      <div class="intro"><div><p class="eyebrow">ВАРИАНТ 02</p><h1>Адреса клиентов</h1><p class="subtitle">Все адреса в одном месте.</p></div><button class="button primary" id="add">+ Добавить адрес</button></div>
+      <nav class="tabs" aria-label="Разделы">
+        <button data-tab="addresses" class="active" aria-current="page">Адреса <span>0</span></button>
+        <button data-tab="cities">Города <span>0</span></button>
+        <button data-tab="regions">Регионы <span>0</span></button>
+        <button data-tab="countries">Страны <span>0</span></button>
+      </nav>
+      <div id="error" class="error" role="alert" hidden><span></span><button id="retry">Повторить</button></div>
+      <section class="panel" aria-labelledby="list-title">
+        <div class="toolbar"><div><h2 id="list-title">Список адресов</h2><p id="list-description">Клиенты, города и контактные адреса</p></div><div class="tools"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Найти клиента или адрес" aria-label="Поиск записей"></label><button class="button" id="refresh" title="Обновить список" aria-label="Обновить список">↻</button></div></div>
+        <div id="content" aria-live="polite"><div class="empty">Загрузка данных…</div></div>
+        <div class="table-footer"><span id="shown">Записей: 0</span><button id="demo" class="link" hidden>Добавить учебные примеры</button></div>
+      </section>
+      <aside class="hint"><span aria-hidden="true">ⓘ</span><p>Сначала добавьте страну, регион и город, затем — адрес клиента.</p></aside>
+    </main>
+    <footer>Учебный проект <span>Страна → Регион → Город → Адрес</span></footer>
+  </div>
+  <dialog id="editor" aria-labelledby="editor-title"><form id="form"><div class="dialog-head"><div><p class="eyebrow" id="editor-label">НОВАЯ ЗАПИСЬ</p><h2 id="editor-title">Добавить адрес</h2></div><button type="button" class="close" id="close" aria-label="Закрыть">×</button></div><div id="fields"></div><p id="form-error" class="form-error" role="alert" hidden></p><div class="dialog-actions"><button type="button" class="button" id="cancel">Отмена</button><button type="submit" class="button primary" id="save">Сохранить</button></div></form></dialog>
+  <dialog id="delete-dialog" aria-labelledby="delete-title"><form id="delete-form"><div class="dialog-head"><h2 id="delete-title">Удалить запись?</h2></div><p id="delete-description"></p><p id="delete-error" class="form-error" role="alert" hidden></p><div class="dialog-actions"><button type="button" id="delete-cancel" class="button">Отмена</button><button type="submit" id="delete-confirm" class="button danger">Удалить</button></div></form></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>
