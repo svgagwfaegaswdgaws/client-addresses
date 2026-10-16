@@ -9,7 +9,7 @@ android {
         targetSdk 36
         versionCode 1
         versionName '1.0'
-        def serverUrl = (project.findProperty('serverUrl') ?: '').toString()
+        def serverUrl = (project.findProperty('serverUrl') ?: 'https://svgagwfaegaswdgaws.pythonanywhere.com').toString()
         buildConfigField 'String', 'DEFAULT_SERVER_URL', '"' + serverUrl.replace('\\', '\\\\').replace('"', '\\"') + '"'
     }
     buildFeatures { buildConfig true }
